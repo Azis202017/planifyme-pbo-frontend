@@ -53,6 +53,7 @@ input {
     border: none;
     color: white;
     padding: 12px 44px 12px 44px;
+    margin-bottom: 20px;
 }
 .cta:hover {
     background: rgba(14, 14, 14, 0.97);
