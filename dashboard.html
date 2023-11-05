@@ -26,6 +26,7 @@
     <section id="background-top"></section>
     <section id="content">
       <div class="row">
+        <!-- Sidebar kiri -->
         <div class="col-lg-3">
           <h1 class="logo">PlanifyMe</h1>
           <div class="sidebar">
@@ -60,6 +61,10 @@
             </div>
           </div>
         </div>
+
+        <!-- End Sidebar kiri -->
+        
+        <!-- Tengah -->
         <div class="col-lg-6">
           <section class="task">
             <p class="title">Tasks <span>(next 7 days)</span></p>
@@ -107,6 +112,8 @@
             </div>
           </section>
         </div>
+        <!-- End Tengah -->
+        <!-- Sidebar Kanan -->
         <div class="col-lg-3">
           <div class="profile-section">
             <img src="assets/images/profile.png" class="profile-img" alt="" />
@@ -117,6 +124,7 @@
             <p>Something</p>
           </div>
         </div>
+        <!-- End Sidebar kanan -->
       </div>
     </section>
 
@@ -138,18 +146,14 @@
         var profileName = document.querySelector(".profile-name");
 
         if (scrollPosition > 220) {
-          // When scrolled past 275px, add the 'scrolled' class to the logo
           logo.classList.add("scrolled");
         } else {
-          // When not scrolled past 275px, remove the 'scrolled' class from the logo
           logo.classList.remove("scrolled");
         }
 
         if (scrollPosition > 120) {
-          // When scrolled past 150px, add the 'scrolled' class to the profile-name
           profileName.classList.add("scrolled");
         } else {
-          // When not scrolled past 150px, remove the 'scrolled' class from the profile-name
           profileName.classList.remove("scrolled");
         }
       });
