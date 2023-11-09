@@ -39,6 +39,10 @@
   height: 153px;
   border-radius: 100%; /* To create a circular image */
   background: url("../images/profile.png");
+  opacity: 1.0;
+}
+.profile-img.scrolled{
+  opacity: 0.0;
 }
 .profile-name {
   color: #fff;

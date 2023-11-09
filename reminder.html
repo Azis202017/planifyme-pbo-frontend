@@ -27,9 +27,18 @@
     <section id="content">
       <div class="row">
         <!-- Tengah -->
-        
+        <div class="col-lg-12">
+            <div class="col-lg-9 ml-auto" style="margin-right: 5%; margin-top: 2%;">
+                <div class="card mr-3" style="width: 100% ;">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div> 
+          </div>
         <!-- End Tengah -->
-
+        
         <!-- Sidebar kiri -->
         <div class="col-lg-3">
           <h1 class="logo">PlanifyMe</h1>
@@ -73,35 +82,17 @@
         </div>
 
         <!-- End Sidebar kiri -->
-
-        
         <!-- Sidebar Kanan -->
         <div class="col-lg-3">
-          <div class="profile-section">
+            <div class="profile-section">
             <img src="assets/images/profile.png" class="profile-img" alt="" />
 
             <p class="text-center profile-name">Dino Kuning</p>
-          </div>
-          <div class="sidebar-right">
-            <div class="d-flex align-items-center flex-column">
-              <h3 class="progress-angka">0</h3>
-              <p class="progress-title">overall progress</p>
             </div>
-            <div class="progress">
-              <div
-                class="progress-bar custom-progress-bar"
-                role="progressbar"
-                style="width: 25%"
-                aria-valuenow="10"
-                aria-valuemin="0"
-                aria-valuemax="100"
-              ></div>
-            </div>
-            <h1 class="title-for-task">Today's Task</h1>
-            <p class="text-empty-task">You have no task today</p>
-          </div>
         </div>
         <!-- End Sidebar kanan -->
+        
+        
       </div>
     </section>
 
@@ -121,6 +112,7 @@
 
         var logo = document.querySelector(".logo");
         var profileName = document.querySelector(".profile-name");
+        var profilImg = document.querySelector(".profile-img");
 
         if (scrollPosition > 200) {
           logo.classList.add("scrolled");
@@ -129,9 +121,15 @@
         }
 
         if (scrollPosition > 120) {
-          profileName.classList.add("scrolled");
+          profileName.classList.add("hidden");
         } else {
-          profileName.classList.remove("scrolled");
+          profileName.classList.remove("hidden");
+        }
+
+        if (scrollPosition > 120) {
+          profilImg.classList.add("scrolled");
+        } else {
+          profilImg.classList.remove("scrolled");
         }
       });
     </script>
