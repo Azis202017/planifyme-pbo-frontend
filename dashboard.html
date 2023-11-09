@@ -224,11 +224,10 @@
         var profileName = document.querySelector(".profile-name");
 
         if (scrollPosition > 200) {
-          logo.style.opacity = "0"; 
+          logo.classList.add("scrolled");
         } else {
-          logo.style.opacity = "1"; 
+          logo.classList.remove("scrolled");
         }
-
 
         if (scrollPosition > 120) {
           profileName.classList.add("scrolled");
