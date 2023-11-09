@@ -37,8 +37,6 @@
   margin-top: 16px;
 }
 
-
-
 .progress-title {
   margin-top: 4px;
   color: #c6c6c6;
@@ -73,7 +71,7 @@
   line-height: normal;
 }
 .empty-card-icon {
-  font-size: 80px ;
+  font-size: 80px;
   margin-top: 25px;
   color: #c3cbda;
   margin-bottom: 6px;

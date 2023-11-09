@@ -20,8 +20,9 @@
       href="https://cdn.jsdelivr.net/npm/fontawesome-6-pro@6.4.0/css/all.min.css"
     />
     <title>Planifyme</title>
+    <link rel="stylesheet" href="assets/css/global.css" />
     <link rel="stylesheet" href="assets/css/dashboard.css" />
-    <link rel="stylesheet" href="assets/css/sidebar.css">
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
   </head>
   <body>
     <section id="background-top"></section>
@@ -32,34 +33,49 @@
           <h1 class="logo">PlanifyMe</h1>
           <div class="sidebar">
             <div>
-              <div class="d-flex">
-                <i class="fa-thin fa-grid-2 sidebar-icon"></i>
-                <p class="active-text">Dashboard</p>
-              </div>
-              <div class="d-flex">
-                <i class="fa-thin fa-envelope-open sidebar-icon-nonactive"></i>
+              <a href="dashboard.html" class="hover-link">
+                <div class="d-flex">
+                  <i class="fa-thin fa-grid-2 sidebar-icon"></i>
+                  <p class="active-text">Dashboard</p>
+                </div>
+              </a>
 
-                <p class="sidebar-text">Task</p>
-              </div>
-              <div class="d-flex">
-                <i class="fa-thin fa-bell sidebar-icon-nonactive"></i>
+              <a href="task.html" class="hover-link">
+                <div class="d-flex">
+                  <i
+                    class="fa-thin fa-envelope-open sidebar-icon-nonactive"
+                  ></i>
 
-                <p class="sidebar-text reminder">Reminder</p>
-              </div>
-              <div class="d-flex">
-                <i class="fa-thin fa-gear sidebar-icon-nonactive"></i>
+                  <p class="sidebar-text">Task</p>
+                </div>
+              </a>
 
-                <p class="sidebar-text">Settings</p>
-              </div>
+              <a href="reminder.html" class="hover-link">
+                <div class="d-flex">
+                  <i class="fa-thin fa-bell sidebar-icon-nonactive"></i>
+
+                  <p class="sidebar-text reminder">Reminder</p>
+                </div>
+              </a>
+
+              <a href="settings.html" class="hover-link">
+                <div class="d-flex">
+                  <i class="fa-thin fa-gear sidebar-icon-nonactive"></i>
+
+                  <p class="sidebar-text">Settings</p>
+                </div>
+              </a>
             </div>
 
-            <div class="d-flex logout">
-              <i
-                class="fa-thin fa-right-from-bracket sidebar-icon-nonactive"
-              ></i>
+            <a href="register.html" class="hover-link">
+              <div class="d-flex logout">
+                <i
+                  class="fa-thin fa-right-from-bracket sidebar-icon-nonactive"
+                ></i>
 
-              <p class="sidebar-text">Logout</p>
-            </div>
+                <p class="sidebar-text">Logout</p>
+              </div>
+            </a>
           </div>
         </div>
 
