@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -20,66 +19,127 @@
       href="https://cdn.jsdelivr.net/npm/fontawesome-6-pro@6.4.0/css/all.min.css"
     />
     <title>Planifyme</title>
-    <link rel="stylesheet" href="assets/css/global.css" />
-    <link rel="stylesheet" href="assets/css/reminder.css" />
+    <link rel="stylesheet" href="assets/css/dashboard.css" />
     <link rel="stylesheet" href="assets/css/sidebar.css" />
+    <link rel="stylesheet" href="assets/css/reminder.css" />
   </head>
   <body>
     <section id="background-top"></section>
     <section id="content">
       <div class="row">
+        <!-- Tengah -->
+        <div class="col-lg-12">
+          <div
+            class="col-lg-9 ml-auto"
+            style="margin-bottom: 2%; margin-top: 2%"
+          >
+            <div class="reminder-card">
+              <div class="card-body">
+                <div class="row justify-content-between">
+                  <div class="col-lg-8">
+                    <h5 class="card-title">Category</h5>
+                    <p class="card-text">
+                      Dear User, Reminder for your Category “Task Name” due date
+                      DAY DD MONTH YEAR.
+                    </p>
+                  </div>
+                  <div class="col-lg-1">
+                    <p>TODAY</p>
+                  </div>
+                  <img src="" alt="gambar" class="card-image" />
+                </div>
+              </div>
+            </div>
+            <div class="reminder-card">
+              <div class="card-body">
+                <div class="row justify-content-between">
+                  <div class="col-lg-8">
+                    <h5 class="card-title">Category</h5>
+                    <p class="card-text">
+                      Dear User, Reminder for your Category “Task Name” due date
+                      DAY DD MONTH YEAR.
+                    </p>
+                  </div>
+                  <div class="col-lg-1">
+                    <p>TODAY</p>
+                  </div>
+                  <img src="" alt="gambar" class="card-image" />
+                </div>
+              </div>
+            </div>
+            <div class="reminder-card">
+              <div class="card-body">
+                <div class="row justify-content-between">
+                  <div class="col-lg-8">
+                    <h5 class="card-title">Category</h5>
+                    <p class="card-text">
+                      Dear User, Reminder for your Category “Task Name” due date
+                      DAY DD MONTH YEAR.
+                    </p>
+                  </div>
+                  <div class="col-lg-1">
+                    <p>TODAY</p>
+                  </div>
+                  <img src="" alt="gambar" class="card-image" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Tengah -->
+
         <!-- Sidebar kiri -->
         <div class="col-lg-3">
           <h1 class="logo">PlanifyMe</h1>
           <div class="sidebar">
             <div>
-              <a href="dashboard.html" class="hover-link">
-                <div class="d-flex">
-                  <i class="fa-thin fa-grid-2 sidebar-icon-nonactive"></i>
+              <div class="d-flex">
+                <i class="fa-thin fa-grid-2 sidebar-icon-nonactive"></i>
+                <a href="dashboard.html">
                   <p class="sidebar-text">Dashboard</p>
-                </div>
-              </a>
-
-              <a href="task.html" class="hover-link">
-                <div class="d-flex">
-                  <i
-                    class="fa-thin fa-envelope-open sidebar-icon-nonactive"
-                  ></i>
-                  <p class="sidebar-text">Task</p>
-                </div>
-              </a>
-
-              <a href="reminder.html" class="hover-link">
-                <div class="d-flex">
-                  <i class="fa-thin fa-bell sidebar-icon"></i>
-                  <p class="active-text reminder">Reminder</p>
-                </div>
-              </a>
-
-              <a href="settings.html" class="hover-link">
-                <div class="d-flex">
-                  <i class="fa-thin fa-gear sidebar-icon-nonactive"></i>
-
-                  <p class="sidebar-text">Settings</p>
-                </div>
-              </a>
-            </div>
-            <a href="register.html" class="hover-link">
-              <div class="d-flex logout">
-                <i
-                  class="fa-thin fa-right-from-bracket sidebar-icon-nonactive"
-                ></i>
-                <p class="sidebar-text">Logout</p>
+                </a>
               </div>
-            </a>
+              <div class="d-flex">
+                <i class="fa-thin fa-envelope-open sidebar-icon-nonactive"></i>
+                <a href="task.html">
+                  <p class="sidebar-text">Task</p>
+                </a>
+              </div>
+              <div class="d-flex">
+                <i class="fa-thin fa-bell sidebar-icon"></i>
+                <a href="reminder.html">
+                  <p class="active-text reminder">Reminder</p>
+                </a>
+              </div>
+
+              <div class="d-flex">
+                <i class="fa-thin fa-gear sidebar-icon-nonactive"></i>
+                <a href="settings.html">
+                  <p class="sidebar-text">Settings</p>
+                </a>
+              </div>
+            </div>
+
+            <div class="d-flex logout">
+              <i
+                class="fa-thin fa-right-from-bracket sidebar-icon-nonactive"
+              ></i>
+
+              <p class="sidebar-text">Logout</p>
+            </div>
           </div>
         </div>
 
         <!-- End Sidebar kiri -->
+        <!-- Sidebar Kanan -->
+        <div class="col-lg-3">
+          <div class="profile-section">
+            <img src="assets/images/profile.png" class="profile-img" alt="" />
 
-        <!-- Tengah -->
-
-        <!-- End Tengah -->
+            <p class="text-center profile-name">Dino Kuning</p>
+          </div>
+        </div>
+        <!-- End Sidebar kanan -->
       </div>
     </section>
 
@@ -99,6 +159,7 @@
 
         var logo = document.querySelector(".logo");
         var profileName = document.querySelector(".profile-name");
+        var profilImg = document.querySelector(".profile-img");
 
         if (scrollPosition > 200) {
           logo.classList.add("scrolled");
@@ -107,9 +168,15 @@
         }
 
         if (scrollPosition > 120) {
-          profileName.classList.add("scrolled");
+          profileName.classList.add("hidden");
         } else {
-          profileName.classList.remove("scrolled");
+          profileName.classList.remove("hidden");
+        }
+
+        if (scrollPosition > 120) {
+          profilImg.classList.add("scrolled");
+        } else {
+          profilImg.classList.remove("scrolled");
         }
       });
     </script>

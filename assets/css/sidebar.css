@@ -49,6 +49,7 @@
     font-weight: 600;
     line-height: normal;
   }
+
   .sidebar-right {
     padding: 46px 44px 0 40px;
     position: fixed;
@@ -135,14 +136,14 @@
     font-weight: 400;
     line-height: normal;
   }
-}
 
-.progress-angka {
-  color: #000;
+  .progress-angka {
+    color: #000;
 
-  font-family: Passion One;
-  font-size: 62px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+    font-family: Passion One;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 }
