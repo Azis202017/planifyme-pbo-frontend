@@ -8,3 +8,7 @@
   height: 279px;
   background-size: cover;
 }
+
+.hover-link:hover {
+  text-decoration: none;
+}
