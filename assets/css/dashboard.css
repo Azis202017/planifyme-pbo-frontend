@@ -8,17 +8,80 @@
   height: 279px;
   background-size: cover;
 }
+
+.empty-card {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  height: 161px !important;
+  border-radius: 8px 8px 8px 8px;
+}
+
+.empty-task-title {
+  color: #c3cbda;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
 .category {
   margin-top: 24px;
   margin-bottom: 20px;
 }
+
 .category-card {
   margin-top: 20px;
   height: 197px;
-
+  border-radius: 8px 8px 8px 8px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.category-1 {
+  background-color: rgba(166, 209, 239, 0.8);
+}
+.category-1-img {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  width: 77px;
+  height: 88px;
+}
+
+.category-2 {
+  background-color: rgba(236, 174, 237, 0.8);
+}
+.category-2-img {
+  margin-top: 32px;
+  margin-bottom: 15px;
+  width: 88px;
+  height: 65px;
+}
+
+.category-3 {
+  background-color: rgba(134, 235, 241, 0.8);
+}
+.category-3-img {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  width: 78px;
+  height: 76px;
+}
+
+.category-4 {
+  background-color: rgba(134, 170, 241, 0.8);
+}
+.category-4-img {
+  margin-top: 32px;
+  margin-bottom: 10px;
+  width: 72px;
+  height: 80px;
+}
+
 .add-category {
   margin-top: 20px;
 
@@ -26,6 +89,7 @@
   height: 197px;
   padding-top: 42px;
 }
+
 .add-category-title {
   color: #000;
 
@@ -47,9 +111,11 @@
   font-weight: 400;
   line-height: normal;
 }
+
 .custom-progress-bar {
   background-color: black;
 }
+
 .title-for-task {
   margin-top: 37px;
   color: #000;
