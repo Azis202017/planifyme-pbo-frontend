@@ -76,7 +76,43 @@
         <!-- End Sidebar kiri -->
 
         <!-- Tengah -->
+        <div class="col-lg-9">
+          <div class="tasks">
+            <section id="task-actions">
+              <div class="d-flex">
+                <p class="selected">selected(0)</p>
+                <p class="mark-complete">mark as completed</p>
+                <p class="edit-task">edit task</p>
+                <button type="button" class="btn button btn-dark">
+                  Create +
+                </button>
+              </div>
+            </section>
 
+            <table class="table">
+              <thead class="thead-light table-bordered">
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Task</th>
+                  <th scope="col">Category</th>
+                  <th scope="col">Due Date</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody class="table-borderles">
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td colspan="5" class="d-flex justify-content-center">
+                    <img src="empty-state-image.jpg" alt="Empty State" />
+                  </td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
         <!-- End Tengah -->
       </div>
     </section>
